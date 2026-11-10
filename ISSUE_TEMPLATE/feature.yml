@@ -1,0 +1,35 @@
+name: Feature
+description: Nova funcionalidade ou capacidade
+title: "feat: "
+labels: ["type:feat"]
+body:
+  - type: textarea
+    id: objetivo
+    attributes:
+      label: Objetivo
+      description: O que precisa existir e por quê (valor para o projeto/pitch).
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Área
+      options: [pipeline, model, api, web, viz, data, infra, docs]
+    validations:
+      required: true
+  - type: textarea
+    id: aceite
+    attributes:
+      label: Critérios de aceite
+      placeholder: |
+        - [ ] ...
+        - [ ] ...
+    validations:
+      required: true
+  - type: dropdown
+    id: prioridade
+    attributes:
+      label: Prioridade
+      options: ["alta — entra no MVP", "média", "baixa — se sobrar tempo"]
+    validations:
+      required: true

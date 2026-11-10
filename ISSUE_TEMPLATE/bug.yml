@@ -1,0 +1,36 @@
+name: Bug
+description: Algo não funciona como deveria
+title: "fix: "
+labels: ["type:fix"]
+body:
+  - type: textarea
+    id: descricao
+    attributes:
+      label: O que aconteceu
+    validations:
+      required: true
+  - type: textarea
+    id: esperado
+    attributes:
+      label: O que era esperado
+    validations:
+      required: true
+  - type: textarea
+    id: reproduzir
+    attributes:
+      label: Como reproduzir
+      render: bash
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs / prints
+      render: text
+  - type: dropdown
+    id: area
+    attributes:
+      label: Área
+      options: [pipeline, model, api, web, viz, data, infra, docs]
+    validations:
+      required: true

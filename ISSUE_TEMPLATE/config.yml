@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Desafio oficial — Harmonization of MODIS and VIIRS Hot Spots
+    url: https://www.spaceappschallenge.org/2026/challenges/
+    about: Enunciado, recursos e regras do desafio.
+  - name: NASA FIRMS
+    url: https://firms.modaps.eosdis.nasa.gov/
+    about: Fonte dos dados de focos ativos (MODIS/VIIRS).
